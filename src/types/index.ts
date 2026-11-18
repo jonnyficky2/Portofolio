@@ -6,6 +6,7 @@ export interface StudentInfo {
   nobp: string;
   tagline: string;
   bioIntro: string;
+  avatarUrl?: string;
   academicDetails: {
     label: string;
     value: string;
