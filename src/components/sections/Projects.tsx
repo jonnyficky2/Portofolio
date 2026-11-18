@@ -5,6 +5,7 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { Card } from '../ui/Card';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
+import { FadeIn, StaggerContainer, StaggerItem } from '../ui/Motion';
 
 export const Projects: React.FC = () => {
   const featuredProject = projectsData.find((p) => p.isFeatured);
@@ -30,15 +31,17 @@ export const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge="Featured Projects"
-          title="Projects & repositories"
-          subtitle="LifeFlow ditampilkan sebagai proyek unggulan. Detail proyek lain mengikuti informasi publik yang sudah diverifikasi."
-        />
+        <FadeIn>
+          <SectionHeading
+            badge="Featured Projects"
+            title="Projects & repositories"
+            subtitle="LifeFlow is featured as the flagship project. Other repositories are listed based on verified public information."
+          />
+        </FadeIn>
 
         {/* Featured Flagship Project: LifeFlow */}
         {featuredProject && (
-          <div className="mb-14">
+          <FadeIn delay={0.1} className="mb-14">
             <Card glow className="border-brand-indigo/30 bg-gradient-to-br from-dark-card via-dark-card to-brand-indigo/5 p-6 sm:p-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8 space-y-4">
@@ -112,11 +115,11 @@ export const Projects: React.FC = () => {
                 </div>
               </div>
             </Card>
-          </div>
+          </FadeIn>
         )}
 
         {/* Secondary Projects Grid */}
-        <div className="space-y-4 mb-6">
+        <FadeIn delay={0.15} className="space-y-4 mb-6">
           <div className="flex items-center gap-2">
             <Folder className="w-4 h-4 text-brand-blue" />
             <h3 className="text-lg font-bold text-white tracking-tight">
@@ -126,74 +129,76 @@ export const Projects: React.FC = () => {
           <p className="text-xs text-slate-400">
             Names and primary languages are based on verified GitHub repository metadata; other details remain unverified.
           </p>
-        </div>
+        </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {otherProjects.map((project) => (
-            <Card key={project.id} className="flex flex-col justify-between h-full group hover:border-white/20 transition-all">
-              <div className="space-y-3.5">
-                {/* Header info */}
-                <div className="flex items-start justify-between gap-2">
-                  <span className="text-[11px] font-mono text-brand-blue uppercase tracking-wider">
-                    {project.category}
-                  </span>
-                  {getStatusBadge(project.status)}
+            <StaggerItem key={project.id} className="h-full">
+              <Card className="flex flex-col justify-between h-full group hover:border-white/20 transition-all">
+                <div className="space-y-3.5">
+                  {/* Header info */}
+                  <div className="flex items-start justify-between gap-2">
+                    <span className="text-[11px] font-mono text-brand-blue uppercase tracking-wider">
+                      {project.category}
+                    </span>
+                    {getStatusBadge(project.status)}
+                  </div>
+
+                  {/* Title */}
+                  <h4 className="text-lg font-bold text-white group-hover:text-brand-blue transition-colors">
+                    {project.title}
+                  </h4>
+
+                  {/* Description */}
+                  <p className="text-xs text-slate-300 leading-relaxed">
+                    {project.description}
+                  </p>
+
                 </div>
 
-                {/* Title */}
-                <h4 className="text-lg font-bold text-white group-hover:text-brand-blue transition-colors">
-                  {project.title}
-                </h4>
+                <div className="pt-5 mt-5 border-t border-white/5 space-y-3">
+                  {project.techStack.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.techStack.map((tech) => (
+                        <Badge key={tech} variant="secondary" size="sm">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
 
-                {/* Description */}
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  {project.description}
-                </p>
-
-              </div>
-
-              <div className="pt-5 mt-5 border-t border-white/5 space-y-3">
-                {project.techStack.length > 0 && (
-                  <div className="flex flex-wrap gap-1.5">
-                    {project.techStack.map((tech) => (
-                      <Badge key={tech} variant="secondary" size="sm">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                )}
-
-                <div className="flex items-center justify-between pt-1">
-                  <div className="flex items-center gap-4">
-                    {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-medium text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-blue"
-                    >
-                      <Github className="w-3.5 h-3.5" />
-                      <span>Lihat Repo</span>
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
-                    )}
-                    {project.liveUrl && (
+                  <div className="flex items-center justify-between pt-1">
+                    <div className="flex items-center gap-4">
+                      {project.githubUrl && (
                       <a
-                        href={project.liveUrl}
+                        href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-medium text-brand-blue hover:text-white flex items-center gap-1.5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-blue"
+                        className="text-xs font-medium text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-blue"
                       >
-                        <span>Live demo</span>
+                        <Github className="w-3.5 h-3.5" />
+                        <span>View Repo</span>
                         <ExternalLink className="w-3 h-3" />
                       </a>
-                    )}
+                      )}
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs font-medium text-brand-blue hover:text-white flex items-center gap-1.5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-blue"
+                        >
+                          <span>Live demo</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );

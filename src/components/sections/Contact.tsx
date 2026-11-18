@@ -3,6 +3,7 @@ import { Github, Mail, Linkedin, AlertCircle, ExternalLink } from 'lucide-react'
 import { socialLinks } from '../../data/portfolioData';
 import { SectionHeading } from '../ui/SectionHeading';
 import { Card } from '../ui/Card';
+import { FadeIn, StaggerContainer, StaggerItem } from '../ui/Motion';
 
 export const Contact: React.FC = () => {
   const getIcon = (iconName: string) => {
@@ -27,58 +28,61 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge="Get in Touch"
-          title="Let's Connect"
-          subtitle="Terbuka untuk diskusi tentang teknologi, proyek kolaborasi, atau sekadar menyapa."
-          align="center"
-        />
+        <FadeIn>
+          <SectionHeading
+            badge="Get in Touch"
+            title="Let's Connect"
+            subtitle="Open to discussions about technology, collaborative projects, or just saying hello."
+            align="center"
+          />
+        </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
           {socialLinks.map((link) => (
-            <div key={link.label} className="relative">
-              {link.isPlaceholder ? (
-                <Card className="flex flex-col items-center text-center gap-3 opacity-60 cursor-not-allowed select-none">
-                  <div className={`p-3 rounded-xl border ${getIconColors(link.icon, true)}`}>
-                    {getIcon(link.icon)}
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-slate-400">{link.label}</div>
-                    <div className="text-xs text-slate-500 font-mono mt-0.5">{link.value}</div>
-                  </div>
-                  <div className="flex items-center gap-1 text-[11px] text-amber-400/80 font-mono">
-                    <AlertCircle className="w-3 h-3" />
-                    Belum dikonfirmasi
-                  </div>
-                </Card>
-              ) : (
-                <a
-                  href={link.url ?? '#'}
-                  target={link.label === 'Email' ? undefined : '_blank'}
-                  rel={link.label === 'Email' ? undefined : 'noopener noreferrer'}
-                  className="block rounded-2xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-blue"
-                >
-                  <Card className={`flex flex-col items-center text-center gap-3 transition-all group`}>
-                    <div className={`p-3 rounded-xl border transition-colors ${getIconColors(link.icon, false)}`}>
+            <StaggerItem key={link.label} className="h-full">
+              <div className="relative h-full">
+                {link.isPlaceholder ? (
+                  <Card className="flex flex-col items-center text-center gap-3 opacity-60 cursor-not-allowed select-none h-full">
+                    <div className={`p-3 rounded-xl border ${getIconColors(link.icon, true)}`}>
                       {getIcon(link.icon)}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-white group-hover:text-brand-blue transition-colors">
-                        {link.label}
-                      </div>
-                      <div className="text-xs text-slate-400 font-mono mt-0.5">{link.value}</div>
+                      <div className="text-sm font-semibold text-slate-400">{link.label}</div>
+                      <div className="text-xs text-slate-500 font-mono mt-0.5">{link.value}</div>
                     </div>
-                    <div className="flex items-center gap-1 text-[11px] text-emerald-400 font-mono">
-                      <ExternalLink className="w-3 h-3" />
-                      Terverifikasi
+                    <div className="flex items-center gap-1 text-[11px] text-amber-400/80 font-mono mt-auto">
+                      <AlertCircle className="w-3 h-3" />
+                      Not confirmed
                     </div>
                   </Card>
-                </a>
-              )}
-            </div>
+                ) : (
+                  <a
+                    href={link.url ?? '#'}
+                    target={link.label === 'Email' ? undefined : '_blank'}
+                    rel={link.label === 'Email' ? undefined : 'noopener noreferrer'}
+                    className="block rounded-2xl h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-blue"
+                  >
+                    <Card className={`flex flex-col items-center text-center gap-3 transition-all group h-full`}>
+                      <div className={`p-3 rounded-xl border transition-colors ${getIconColors(link.icon, false)}`}>
+                        {getIcon(link.icon)}
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-white group-hover:text-brand-blue transition-colors">
+                          {link.label}
+                        </div>
+                        <div className="text-xs text-slate-400 font-mono mt-0.5">{link.value}</div>
+                      </div>
+                      <div className="flex items-center gap-1 text-[11px] text-emerald-400 font-mono mt-auto">
+                        <ExternalLink className="w-3 h-3" />
+                        Verified
+                      </div>
+                    </Card>
+                  </a>
+                )}
+              </div>
+            </StaggerItem>
           ))}
-        </div>
-
+        </StaggerContainer>
       </div>
     </section>
   );
