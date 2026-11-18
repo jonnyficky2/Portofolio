@@ -33,9 +33,9 @@ export const Journey: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <SectionHeading
-            badge="Learning Journey"
-            title="Learning Journey & Technology Exploration"
-            subtitle="A record of my academic growth and technical exploration as an Information Systems student."
+            badge="Milestones"
+            title="Learning Journey & Evolution"
+            subtitle="A chronological timeline of my academic development and hands-on software engineering milestones."
             align="center"
           />
         </FadeIn>

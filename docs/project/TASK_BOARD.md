@@ -4,7 +4,7 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 
 ---
 
-## 📊 Overall Progress: 50% (7/14 Tasks)
+## 📊 Overall Progress: 57% (8/14 Tasks)
 
 ---
 
@@ -76,12 +76,12 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 ### [TASK-P07] Perluas Journey Timeline
 - **Description:** Section Journey hanya memiliki 2 milestone (Pendidikan & Proyek). Tambahkan timeline belajar yang lebih detail dan kronologis untuk mencerminkan perkembangan nyata.
 - **Priority:** Medium 🟡
-- **Status:** NOT_STARTED
+- **Status:** DONE ✅
 - **Dependencies:** TASK-P05
-- **Acceptance Criteria:** Minimal 4-5 milestone kronologis yang menggambarkan perjalanan dari awal belajar hingga sekarang. Setiap milestone memiliki periode/tahun, teknologi yang dipelajari, dan deskripsi yang bermakna.
-- **Progress:** 0%
+- **Acceptance Criteria:** Minimal 4-5 milestone kronologis yang menggambarkan perjalanan dari awal belajar hingga sekarang. Setiap milestone memiliki periode/tahun, teknologi yang dipelajari, dan deskripsi yang bermakna. ✅
+- **Progress:** 100%
 - **Related Docs:** `src/data/portfolioData.ts` (journeyMilestones), `src/components/sections/Journey.tsx`
-- **Notes:** Contoh: 2023 — Masuk kuliah SI → Belajar HTML/CSS → Proyek pertama (POS/CI3) → Belajar React/TypeScript → LifeFlow (2024–sekarang).
+- **Notes:** Ditambahkan 5 milestone kronologis: (1) 2023 - Awal Kuliah & Dasar Web, (2) Awal 2024 - Backend PHP & CI3, (3) Pertengahan 2024 - Adopsi TypeScript, (4) Akhir 2024 - Proyek LifeFlow PWA, (5) 2024–Sekarang - Pembelajaran Berkelanjutan.
 
 ### [TASK-P08] Animasi Scroll-In dengan Framer Motion
 - **Description:** Tambahkan animasi `whileInView` / `fadeInUp` ke setiap section menggunakan Framer Motion yang sudah terpasang. Animasi harus menghormati `prefers-reduced-motion`.

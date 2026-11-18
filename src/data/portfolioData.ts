@@ -135,21 +135,49 @@ export const skillCategories: SkillCategory[] = [
 
 export const journeyMilestones: JourneyMilestone[] = [
   {
-    period: 'Education',
-    title: 'Information Systems',
+    period: '2023',
+    title: 'Enrolled in Information Systems & Web Fundamentals',
     institutionOrContext: 'Universitas Putra Indonesia YPTK Padang',
-    description: 'Undergraduate student in the Information Systems program.',
-    technologies: [],
+    description:
+      'Started undergraduate studies in Information Systems. Began learning core programming concepts, database modeling fundamentals, and web markup using semantic HTML and CSS.',
+    technologies: ['HTML5', 'CSS3', 'Algorithms', 'Database Fundamentals'],
     iconType: 'academic',
   },
   {
-    period: 'Projects',
-    title: 'Projects on GitHub',
-    institutionOrContext: 'github.com/jonnyficky2',
+    period: 'Early 2024',
+    title: 'Backend Foundations with PHP & CodeIgniter 3',
+    institutionOrContext: 'Academic Coursework & Personal Labs',
     description:
-      'LifeFlow is featured as the flagship project. Other projects are listed based on information available in their public repositories.',
-    technologies: ['LifeFlow', 'POS', 'CI3_CRUD', 'Restaurant Landing System'],
+      'Deepened understanding of MVC architecture through database-driven web applications. Built CRUD systems, dynamic templating layouts, and Point-of-Sale prototypes using PHP and MySQL.',
+    technologies: ['PHP', 'CodeIgniter 3', 'MySQL', 'Bootstrap'],
     iconType: 'project',
+  },
+  {
+    period: 'Mid 2024',
+    title: 'Adopting Modern Frontend & TypeScript',
+    institutionOrContext: 'Self-Directed Exploration',
+    description:
+      'Transitioned to modern component-based UI engineering. Adopted TypeScript for strict type safety, building responsive web solutions including the Restaurant Landing System.',
+    technologies: ['TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'Vite'],
+    iconType: 'skill',
+  },
+  {
+    period: 'Late 2024',
+    title: 'Developing LifeFlow — PWA Habit Tracker',
+    institutionOrContext: 'Featured Open Source Project',
+    description:
+      'Architected and built LifeFlow, a Progressive Web App (PWA) with React and Firebase. Integrated offline-first capabilities, habit tracking state workflows, and modern UI design.',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'PWA', 'Firebase'],
+    iconType: 'project',
+  },
+  {
+    period: '2024 — Present',
+    title: 'Continuous Learning & Full-Stack Craft',
+    institutionOrContext: 'Professional Growth & Portfolio',
+    description:
+      'Actively developing production-ready web apps while pursuing Information Systems degree. Focusing on modern web ecosystems, performance optimization, and interactive interfaces.',
+    technologies: ['React', 'TypeScript', 'Framer Motion', 'REST APIs', 'Git'],
+    iconType: 'academic',
   },
 ];
 
