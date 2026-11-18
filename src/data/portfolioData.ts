@@ -13,7 +13,7 @@ export const studentData: StudentInfo = {
   major: 'Information Systems',
   nobp: '23101152610508',
   tagline: 'A personal space for projects, learning, and digital craft.',
-  avatarUrl: '/profil.jpeg',
+  avatarUrl: `${import.meta.env.BASE_URL}profil.jpeg`,
   bioIntro:
     'I\'m Jonny Ficky, an Information Systems student at Universitas Putra Indonesia YPTK Padang. This portfolio showcases my publicly available projects and reflects my growth as a developer.',
   academicDetails: [
