@@ -4,7 +4,7 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 
 ---
 
-## 📊 Overall Progress: 71% (10/14 Tasks)
+## 📊 Overall Progress: 79% (11/14 Tasks)
 
 ---
 
@@ -126,11 +126,12 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 ### [TASK-P12] Favicon Custom (Inisial JF)
 - **Description:** `public/favicon.svg` kemungkinan masih favicon default Vite. Buat favicon SVG custom dengan inisial "JF" dan warna brand yang sesuai dengan logo di Navbar.
 - **Priority:** Low 🟢
-- **Status:** NOT_STARTED
+- **Status:** DONE ✅
 - **Dependencies:** None
-- **Acceptance Criteria:** Favicon di tab browser menampilkan inisial "JF" dengan background gradient brand (indigo→blue); terlihat jelas di ukuran 16x16 dan 32x32px.
-- **Progress:** 0%
-- **Related Docs:** `public/favicon.svg`, `index.html`
+- **Acceptance Criteria:** Favicon di tab browser menampilkan inisial "JF" dengan background gradient brand (indigo→blue); terlihat jelas di ukuran 16x16 dan 32x32px. ✅
+- **Progress:** 100%
+- **Related Docs:** `public/favicon.svg`, `index.html`, `src/components/layout/Navbar.tsx`
+- **Notes:** File `public/favicon.svg` sudah berisi monogram "JF" bergradien brand (cyan→indigo→violet) dengan background dark navy, selaras dengan logo Navbar dan tag `<link rel="icon">` di `index.html`.
 
 ### [TASK-P13] Halaman 404 untuk GitHub Pages
 - **Description:** Saat ini tidak ada `404.html`. Jika pengguna mengakses URL yang tidak ada di GitHub Pages, mereka mendapat halaman error default GitHub yang tidak branded.
