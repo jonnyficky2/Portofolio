@@ -4,7 +4,7 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 
 ---
 
-## 📊 Overall Progress: 64% (9/14 Tasks)
+## 📊 Overall Progress: 71% (10/14 Tasks)
 
 ---
 
@@ -106,12 +106,12 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 ### [TASK-P10] Meta Tag SEO & Open Graph
 - **Description:** `index.html` belum memiliki meta tag deskripsi, Open Graph (OG), dan Twitter Card. Ini membuat tampilan link saat dibagikan ke media sosial tidak menarik.
 - **Priority:** Medium 🟡
-- **Status:** NOT_STARTED
+- **Status:** DONE ✅
 - **Dependencies:** None
-- **Acceptance Criteria:** Tag `<meta name="description">`, `og:title`, `og:description`, `og:image`, dan `og:url` terpasang di `<head>`; preview link di WhatsApp/Twitter menampilkan nama + deskripsi yang benar.
-- **Progress:** 0%
-- **Related Docs:** `index.html`
-- **Notes:** Siapkan file gambar `public/og-image.png` ukuran 1200x630px untuk OG image.
+- **Acceptance Criteria:** Tag `<meta name="description">`, `og:title`, `og:description`, `og:image`, dan `og:url` terpasang di `<head>`; preview link di WhatsApp/Twitter menampilkan nama + deskripsi yang benar. ✅
+- **Progress:** 100%
+- **Related Docs:** `index.html`, `public/og-image.png`
+- **Notes:** Gambar OG resolusi 1200x630px dibuat di `public/og-image.png` dengan branding modern, foto profil, dan tag keahlian. Tag Open Graph dan Twitter card (`summary_large_image`) dipasang lengkap di `index.html`.
 
 ### [TASK-P11] Contact Form (Formspree)
 - **Description:** Tambahkan form kontak sederhana (Nama, Email, Pesan) di section Contact menggunakan Formspree sebagai backend gratis tanpa perlu server.
