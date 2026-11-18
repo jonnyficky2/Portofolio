@@ -95,26 +95,40 @@ export const projectsData: ProjectItem[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: 'Portfolio stack',
-    description: 'Tools configured for this portfolio project.',
+    title: 'Web Frontend',
+    description: 'Modern user interface design and client-side web development.',
     iconName: 'Code2',
     skills: [
-      { name: 'React', context: 'UI library used by this portfolio' },
-      { name: 'TypeScript', context: 'Primary language for this portfolio' },
-      { name: 'Vite', context: 'Development server and build tool' },
-      { name: 'Tailwind CSS', context: 'Styling framework configured for this project' },
-      { name: 'Framer Motion', context: 'Animation library configured for this project' },
-      { name: 'Lucide React', context: 'Icon library configured for this project' },
+      { name: 'React', level: 'Intermediate', context: 'Component-driven UI, hooks, and state management' },
+      { name: 'TypeScript', level: 'Proficient', context: 'Type-safe frontend development across projects' },
+      { name: 'JavaScript (ES6+)', level: 'Proficient', context: 'Modern web scripting, async/await, DOM APIs' },
+      { name: 'Tailwind CSS', level: 'Proficient', context: 'Utility-first responsive layouts and styling' },
+      { name: 'HTML5 & CSS3', level: 'Advanced', context: 'Semantic markup, modern flexbox & CSS grid' },
+      { name: 'Vite', level: 'Proficient', context: 'Fast development server and production bundler' },
     ],
   },
   {
-    title: 'Repository languages',
-    description: 'Primary languages reported by the verified public repositories.',
+    title: 'Backend & Database',
+    description: 'Server-side application logic, data modeling, and databases.',
+    iconName: 'Database',
+    skills: [
+      { name: 'PHP', level: 'Intermediate', context: 'Server-side application logic and MVC patterns' },
+      { name: 'MySQL', level: 'Intermediate', context: 'Relational schema design, normalization, and SQL queries' },
+      { name: 'CodeIgniter 3', level: 'Intermediate', context: 'MVC framework, CRUD operations, dynamic layouts' },
+      { name: 'Firebase', level: 'Intermediate', context: 'Authentication, Firestore realtime database, and PWA setup' },
+      { name: 'RESTful APIs', level: 'Intermediate', context: 'API consumption, JSON serialization, and endpoints' },
+    ],
+  },
+  {
+    title: 'Tools & Environment',
+    description: 'Essential workflow tools, version control, and developer utilities.',
     iconName: 'Terminal',
     skills: [
-      { name: 'TypeScript', context: 'Restaurant Landing System repository' },
-      { name: 'HTML', context: 'POS and Smart Warung POS repositories' },
-      { name: 'PHP', context: 'CI3 CRUD and CI3 Dynamic Layout repositories' },
+      { name: 'Git & GitHub', level: 'Proficient', context: 'Version control, branch workflows, and GitHub Pages' },
+      { name: 'VS Code', level: 'Advanced', context: 'Primary development IDE with extensions and debugging' },
+      { name: 'Figma', level: 'Intermediate', context: 'UI/UX prototyping, design wireframing, and layouts' },
+      { name: 'Postman', level: 'Intermediate', context: 'API testing, request inspection, and debugging' },
+      { name: 'npm / Node.js', level: 'Proficient', context: 'Package management and script execution' },
     ],
   },
 ];

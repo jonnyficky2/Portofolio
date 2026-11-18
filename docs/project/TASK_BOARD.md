@@ -4,7 +4,7 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 
 ---
 
-## 📊 Overall Progress: 43% (6/14 Tasks)
+## 📊 Overall Progress: 50% (7/14 Tasks)
 
 ---
 
@@ -66,12 +66,12 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 ### [TASK-P06] Perluas Section Skills
 - **Description:** Section Skills saat ini hanya menampilkan tools portofolio dan bahasa repo GitHub. Tambahkan kategori skill nyata yang dikuasai sebagai mahasiswa SI.
 - **Priority:** Medium 🟡
-- **Status:** NOT_STARTED
+- **Status:** DONE ✅
 - **Dependencies:** TASK-P05
-- **Acceptance Criteria:** Minimal ada 3 kategori skill: (1) Web Frontend, (2) Backend & Database, (3) Tools & Environment. Setiap kategori berisi skill yang nyata dan relevan.
-- **Progress:** 0%
+- **Acceptance Criteria:** Minimal ada 3 kategori skill: (1) Web Frontend, (2) Backend & Database, (3) Tools & Environment. Setiap kategori berisi skill yang nyata dan relevan. ✅
+- **Progress:** 100%
 - **Related Docs:** `src/data/portfolioData.ts` (skillCategories), `src/components/sections/Skills.tsx`
-- **Notes:** Contoh: Web → HTML, CSS, Bootstrap, JavaScript, React, TypeScript. Backend → PHP, MySQL, CodeIgniter 3. Tools → Git, GitHub, VS Code, Figma, Vite.
+- **Notes:** Ditata menjadi 3 kategori: Web Frontend (React, TS, JS, Tailwind, HTML/CSS, Vite), Backend & DB (PHP, MySQL, CI3, Firebase, REST APIs), Tools (Git/GitHub, VS Code, Figma, Postman, Node.js). Dilengkapi level profisiensi dan konteks nyata.
 
 ### [TASK-P07] Perluas Journey Timeline
 - **Description:** Section Journey hanya memiliki 2 milestone (Pendidikan & Proyek). Tambahkan timeline belajar yang lebih detail dan kronologis untuk mencerminkan perkembangan nyata.

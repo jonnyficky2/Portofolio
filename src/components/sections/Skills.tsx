@@ -24,9 +24,9 @@ export const Skills: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <SectionHeading
-            badge="Stack & repositories"
-            title="Tools and repository languages"
-            subtitle="Tools configured in this portfolio and primary languages reported by the linked public repositories."
+            badge="Technical Skills"
+            title="Skills & Technologies"
+            subtitle="Core technologies, frameworks, databases, and development tools I work with as an Information Systems student."
           />
         </FadeIn>
 
