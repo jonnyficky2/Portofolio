@@ -4,7 +4,7 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 
 ---
 
-## 📊 Overall Progress: 57% (8/14 Tasks)
+## 📊 Overall Progress: 64% (9/14 Tasks)
 
 ---
 
@@ -96,12 +96,12 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 ### [TASK-P09] Tombol Download CV
 - **Description:** Tambahkan tombol "Download CV" di bagian Hero (secondary button) atau di section Contact. File CV disimpan di folder `public/`.
 - **Priority:** Medium 🟡
-- **Status:** NOT_STARTED
+- **Status:** DONE ✅
 - **Dependencies:** None
-- **Acceptance Criteria:** Klik tombol langsung mendownload file PDF CV; atribut `download` terpasang; tombol memiliki ikon `Download` dari Lucide React.
-- **Progress:** 0%
-- **Related Docs:** `src/components/sections/Hero.tsx`, `public/`
-- **Notes:** Simpan file sebagai `public/cv-jonnyficky.pdf`. Jika belum ada CV digital, buat dulu sebelum task ini bisa diselesaikan.
+- **Acceptance Criteria:** Klik tombol langsung mendownload file PDF CV; atribut `download` terpasang; tombol memiliki ikon `Download` dari Lucide React. ✅
+- **Progress:** 100%
+- **Related Docs:** `src/components/sections/Hero.tsx`, `src/components/ui/Button.tsx`, `public/cv-jonnyficky.pdf`
+- **Notes:** File CV terstruktur disimpan di `public/cv-jonnyficky.pdf`. Tombol Download CV ditambahkan di bagian Hero dengan ikon Download dan dukungan atribut `download` pada komponen Button. Link menggunakan base URL dinamis agar aman di GitHub Pages.
 
 ### [TASK-P10] Meta Tag SEO & Open Graph
 - **Description:** `index.html` belum memiliki meta tag deskripsi, Open Graph (OG), dan Twitter Card. Ini membuat tampilan link saat dibagikan ke media sosial tidak menarik.

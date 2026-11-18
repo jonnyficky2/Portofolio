@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowDown, Sparkles, FolderGit2, Mail, GraduationCap } from 'lucide-react';
+import { ArrowDown, Sparkles, FolderGit2, Mail, GraduationCap, Download } from 'lucide-react';
 import { studentData } from '../../data/portfolioData';
 import { Button } from '../ui/Button';
 import { Avatar } from '../ui/Avatar';
@@ -157,8 +157,18 @@ export const Hero: React.FC = () => {
           </Button>
 
           <Button
-            href="#contact"
+            href={`${import.meta.env.BASE_URL}cv-jonnyficky.pdf`}
+            download="CV-JonnyFicky.pdf"
             variant="secondary"
+            size="lg"
+            icon={<Download className="w-4 h-4" />}
+          >
+            Download CV
+          </Button>
+
+          <Button
+            href="#contact"
+            variant="outline"
             size="lg"
             icon={<Mail className="w-4 h-4" />}
           >

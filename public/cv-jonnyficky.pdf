@@ -1,0 +1,125 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595 842]
+  /Resources <<
+    /Font <<
+      /F1 4 0 R
+      /F2 5 0 R
+    >>
+  >>
+  /Contents 6 0 R
+>>
+endobj
+4 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<< /Length 1350 >>
+stream
+BT
+/F1 22 Tf
+50 780 Td
+(JONNY FICKY) Tj
+0 -24 Td
+/F2 12 Tf
+(Information Systems Student | Junior Web Developer) Tj
+0 -16 Td
+/F2 10 Tf
+(Padang, Indonesia | Email: jonnyficky2@gmail.com | GitHub: github.com/jonnyficky2) Tj
+0 -28 Td
+/F1 14 Tf
+(ACADEMIC BACKGROUND) Tj
+0 -18 Td
+/F1 11 Tf
+(Universitas Putra Indonesia YPTK Padang) Tj
+0 -14 Td
+/F2 10 Tf
+(Bachelor of Information Systems \(NOBP: 23101152610508\) | 2023 - Present) Tj
+0 -28 Td
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -18 Td
+/F2 10 Tf
+(Frontend: React, TypeScript, JavaScript \(ES6+\), Tailwind CSS, HTML5, CSS3, Vite, Framer Motion) Tj
+0 -14 Td
+(Backend & Database: PHP, MySQL, CodeIgniter 3, Firebase \(Auth, Firestore\), RESTful APIs) Tj
+0 -14 Td
+(Tools: Git, GitHub, VS Code, Figma, Postman, npm, Node.js) Tj
+0 -28 Td
+/F1 14 Tf
+(FEATURED PROJECTS) Tj
+0 -18 Td
+/F1 11 Tf
+(LifeFlow - Progressive Web App \(PWA\)) Tj
+0 -14 Td
+/F2 10 Tf
+(- Daily habit and activity tracking web app built with React, TypeScript, and Firebase) Tj
+0 -12 Td
+(- Full offline-first support with service workers, local caching, and real-time synchronization) Tj
+0 -18 Td
+/F1 11 Tf
+(Restaurant Landing System) Tj
+0 -14 Td
+/F2 10 Tf
+(- Modern restaurant landing page and showcase built with TypeScript) Tj
+0 -18 Td
+/F1 11 Tf
+(Point of Sale \(POS\) & CI3 Web Applications) Tj
+0 -14 Td
+/F2 10 Tf
+(- Web applications utilizing PHP, CodeIgniter 3, and MySQL database management) Tj
+0 -28 Td
+/F1 14 Tf
+(ABOUT THIS CV) Tj
+0 -18 Td
+/F2 10 Tf
+(This digital curriculum vitae is linked directly from the personal developer portfolio.) Tj
+0 -14 Td
+(Live Portfolio: https://jonnyficky2.github.io/Portofolio/) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000000337 00000 n 
+0000000408 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+1810
+%%EOF

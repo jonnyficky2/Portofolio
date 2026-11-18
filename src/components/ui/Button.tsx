@@ -4,6 +4,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'ghost' | 'outline';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
+  download?: boolean | string;
   target?: string;
   rel?: string;
   icon?: React.ReactNode;
@@ -16,6 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'md',
   href,
+  download,
   target,
   rel,
   icon,
@@ -47,7 +49,13 @@ export const Button: React.FC<ButtonProps> = ({
 
   if (href) {
     return (
-      <a href={href} target={target} rel={rel} className={combinedClasses}>
+      <a
+        href={href}
+        download={download}
+        target={target}
+        rel={rel}
+        className={combinedClasses}
+      >
         {icon && <span className="shrink-0">{icon}</span>}
         <span>{children}</span>
         {iconRight && <span className="shrink-0">{iconRight}</span>}
