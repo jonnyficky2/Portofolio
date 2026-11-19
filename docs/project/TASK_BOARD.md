@@ -6,6 +6,12 @@ Dokumen ini adalah papan kendali operasional untuk pengembangan Portfolio Websit
 
 ## 📊 Overall Progress: 79% (11/14 Tasks)
 
+## 🕒 Progress Log (Bukti)
+
+| Minggu | Total Jam | Fokus Task | Bukti (commit/PR) | Catatan |
+|---|---:|---|---|---|
+| 2026-11-18..2026-11-24 | 2:00 | TASK-P12, TASK-P10, TASK-P09, TASK-P07, TASK-P06, TASK-P03 | [6ce7ca2](https://github.com/jonnyficky2/Portofolio/commit/6ce7ca20aeffa41cb6f8076c8d877f90008ac925), [8c492fe](https://github.com/jonnyficky2/Portofolio/commit/8c492fe8c810b9688debb10bc8764b5701996815), [367616b](https://github.com/jonnyficky2/Portofolio/commit/367616be6b20eb354d001bcc4f89e9531109e8ea), [3effb9a](https://github.com/jonnyficky2/Portofolio/commit/3effb9a738ffbd649a2e11c95efd68ed15e05799), [13cf0cc](https://github.com/jonnyficky2/Portofolio/commit/13cf0ccfb9c107609a6cbce4fb3dbdcaa12dfd5c), [b3ee413](https://github.com/jonnyficky2/Portofolio/commit/b3ee4133ea3694e6a3949312965e73e04a4dc31d) | Perkembangan: OG/Twitter + CV download + Journey + Skills + Avatar path + Favicon task board. Konsistensi GitHub: 6 commit, aktif 1 hari (2026-11-18). |
+
 ---
 
 ## MP - Portfolio Website
